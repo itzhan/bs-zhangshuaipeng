@@ -40,14 +40,58 @@ export const generatedRoutes: GeneratedRoute[] = [
     }
   },
   {
+    name: 'activity',
+    path: '/activity',
+    component: 'layout.base$view.activity',
+    meta: {
+      title: '活动管理',
+      icon: 'mdi:calendar-star',
+      order: 7,
+      i18nKey: 'route.activity'
+    }
+  },
+  {
+    name: 'adoption',
+    path: '/adoption',
+    component: 'layout.base$view.adoption',
+    meta: {
+      title: '领养审核',
+      icon: 'mdi:heart-outline',
+      order: 4,
+      i18nKey: 'route.adoption'
+    }
+  },
+  {
+    name: 'comment',
+    path: '/comment',
+    component: 'layout.base$view.comment',
+    meta: {
+      title: '评论管理',
+      icon: 'mdi:comment-text-outline',
+      order: 9,
+      i18nKey: 'route.comment'
+    }
+  },
+  {
+    name: 'dict',
+    path: '/dict',
+    component: 'layout.base$view.dict',
+    meta: {
+      title: '数据字典',
+      icon: 'mdi:book-settings',
+      order: 10,
+      i18nKey: 'route.dict'
+    }
+  },
+  {
     name: 'home',
     path: '/home',
     component: 'layout.base$view.home',
     meta: {
-      title: 'home',
-      i18nKey: 'route.home',
+      title: '首页看板',
       icon: 'mdi:monitor-dashboard',
-      order: 1
+      order: 1,
+      i18nKey: 'route.home'
     }
   },
   {
@@ -73,6 +117,61 @@ export const generatedRoutes: GeneratedRoute[] = [
       i18nKey: 'route.login',
       constant: true,
       hideInMenu: true
+    }
+  },
+  {
+    name: 'pet',
+    path: '/pet',
+    component: 'layout.base$view.pet',
+    meta: {
+      title: '宠物管理',
+      icon: 'mdi:paw',
+      order: 2,
+      i18nKey: 'route.pet'
+    }
+  },
+  {
+    name: 'rescue',
+    path: '/rescue',
+    component: 'layout.base$view.rescue',
+    meta: {
+      title: '救助记录',
+      icon: 'mdi:ambulance',
+      order: 3,
+      i18nKey: 'route.rescue'
+    }
+  },
+  {
+    name: 'station',
+    path: '/station',
+    component: 'layout.base$view.station',
+    meta: {
+      title: '救助站管理',
+      icon: 'mdi:hospital-building',
+      order: 5,
+      i18nKey: 'route.station'
+    }
+  },
+  {
+    name: 'supply',
+    path: '/supply',
+    component: 'layout.base$view.supply',
+    meta: {
+      title: '物资管理',
+      icon: 'mdi:package-variant',
+      order: 6,
+      i18nKey: 'route.supply'
+    }
+  },
+  {
+    name: 'user',
+    path: '/user',
+    component: 'layout.base$view.user',
+    meta: {
+      title: '用户管理',
+      icon: 'mdi:account-group',
+      order: 8,
+      i18nKey: 'route.user'
     }
   }
 ];

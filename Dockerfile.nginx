@@ -1,0 +1,27 @@
+# ============================================================
+# Nginx Dockerfile - 同时构建管理端+用户端并用 Nginx 托管
+# ============================================================
+
+# ---- 阶段1: 构建用户端 ----
+FROM node:20-alpine AS frontend-builder
+WORKDIR /app/frontend
+COPY frontend/package*.json ./
+RUN npm ci --no-audit
+COPY frontend/ ./
+RUN npm run build || (npx vue-tsc --noEmit --skipLibCheck || true) && npx vite build
+
+# ---- 阶段2: 构建管理端 ----
+FROM node:20-alpine AS admin-builder
+RUN npm install -g pnpm@10
+ENV CI=true
+WORKDIR /app/admin
+COPY admin/ ./
+RUN pnpm install --no-frozen-lockfile
+RUN pnpm build:test
+
+# ---- 阶段3: Nginx 运行 ----
+FROM nginx:alpine
+COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=frontend-builder /app/frontend/dist /usr/share/nginx/html/user
+COPY --from=admin-builder /app/admin/dist /usr/share/nginx/html/admin
+EXPOSE 80

@@ -1,6 +1,6 @@
 const local: App.I18n.Schema = {
   system: {
-    title: 'SoybeanAdmin',
+    title: 'Pet Rescue Admin',
     updateTitle: 'System Version Update Notification',
     updateContent: 'A new version of the system has been detected. Do you want to refresh the page immediately?',
     updateConfirm: 'Refresh immediately',
@@ -229,7 +229,16 @@ const local: App.I18n.Schema = {
     404: 'Page Not Found',
     500: 'Server Error',
     'iframe-page': 'Iframe',
-    home: 'Home'
+    home: 'Dashboard',
+    pet: 'Pet Management',
+    rescue: 'Rescue Records',
+    adoption: 'Adoption Review',
+    station: 'Rescue Stations',
+    supply: 'Supply Management',
+    activity: 'Activity Management',
+    user: 'User Management',
+    comment: 'Comment Management',
+    dict: 'Data Dictionary'
   },
   page: {
     login: {
@@ -279,33 +288,32 @@ const local: App.I18n.Schema = {
       }
     },
     home: {
-      branchDesc:
-        'For the convenience of everyone in developing and updating the merge, we have streamlined the code of the main branch, only retaining the homepage menu, and the rest of the content has been moved to the example branch for maintenance. The preview address displays the content of the example branch.',
-      greeting: 'Good morning, {userName}, today is another day full of vitality!',
-      weatherDesc: 'Today is cloudy to clear, 20℃ - 25℃!',
-      projectCount: 'Project Count',
-      todo: 'Todo',
-      message: 'Message',
-      downloadCount: 'Download Count',
-      registerCount: 'Register Count',
-      schedule: 'Work and rest Schedule',
+      branchDesc: '',
+      greeting: 'Welcome back, {userName}! Let\'s protect every stray life together 🐾',
+      weatherDesc: '',
+      projectCount: 'Total Pets',
+      todo: 'Pending Adoption',
+      message: 'Pending Rescue',
+      downloadCount: 'Adopted',
+      registerCount: 'Registered Users',
+      schedule: 'Schedule',
       study: 'Study',
       work: 'Work',
       rest: 'Rest',
       entertainment: 'Entertainment',
-      visitCount: 'Visit Count',
-      turnover: 'Turnover',
-      dealCount: 'Deal Count',
+      visitCount: 'Monthly Adoptions',
+      turnover: 'Stations',
+      dealCount: 'Activities',
       projectNews: {
-        title: 'Project News',
-        moreNews: 'More News',
-        desc1: 'Soybean created the open source project soybean-admin on May 28, 2021!',
-        desc2: 'Yanbowe submitted a bug to soybean-admin, the multi-tab bar will not adapt.',
-        desc3: 'Soybean is ready to do sufficient preparation for the release of soybean-admin!',
-        desc4: 'Soybean is busy writing project documentation for soybean-admin!',
-        desc5: 'Soybean just wrote some of the workbench pages casually, and it was enough to see!'
+        title: 'Recent Activity',
+        moreNews: 'View All',
+        desc1: '30 new pets added for adoption',
+        desc2: 'Zhang Xiaoming adopted Labrador "Wangcai"',
+        desc3: 'Sunshine Rescue Center rescued 15 animals this month',
+        desc4: '2026 Spring Adoption Day registration is open',
+        desc5: 'Green City Animal Protection Station completed monthly TNR plan'
       },
-      creativity: 'Creativity'
+      creativity: '🐾 Let Love Go Home'
     }
   },
   form: {

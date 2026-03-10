@@ -1,0 +1,10 @@
+node_modules
+.git
+*.log
+logs/
+upload/
+target/
+.DS_Store
+*.docx
+论文要求/
+开题报告*

@@ -1,6 +1,6 @@
 const local: App.I18n.Schema = {
   system: {
-    title: 'Soybean 管理系统',
+    title: '流浪宠物救助管理系统',
     updateTitle: '系统版本更新通知',
     updateContent: '检测到系统有新版本发布，是否立即刷新页面？',
     updateConfirm: '立即刷新',
@@ -225,7 +225,16 @@ const local: App.I18n.Schema = {
     404: '页面不存在',
     500: '服务器错误',
     'iframe-page': '外链页面',
-    home: '首页'
+    home: '首页看板',
+    pet: '宠物管理',
+    rescue: '救助记录',
+    adoption: '领养审核',
+    station: '救助站管理',
+    supply: '物资管理',
+    activity: '活动管理',
+    user: '用户管理',
+    comment: '评论管理',
+    dict: '数据字典'
   },
   page: {
     login: {
@@ -275,33 +284,32 @@ const local: App.I18n.Schema = {
       }
     },
     home: {
-      branchDesc:
-        '为了方便大家开发和更新合并，我们对main分支的代码进行了精简，只保留了首页菜单，其余内容已移至example分支进行维护。预览地址显示的内容即为example分支的内容。',
-      greeting: '早安，{userName}, 今天又是充满活力的一天!',
-      weatherDesc: '今日多云转晴，20℃ - 25℃!',
-      projectCount: '项目数',
-      todo: '待办',
-      message: '消息',
-      downloadCount: '下载量',
-      registerCount: '注册量',
+      branchDesc: '',
+      greeting: '欢迎回来，{userName}！让我们一起守护每一个流浪的小生命 🐾',
+      weatherDesc: '',
+      projectCount: '宠物总数',
+      todo: '待审核领养',
+      message: '待处理救助',
+      downloadCount: '已领养',
+      registerCount: '注册用户',
       schedule: '作息安排',
       study: '学习',
       work: '工作',
       rest: '休息',
       entertainment: '娱乐',
-      visitCount: '访问量',
-      turnover: '成交额',
-      dealCount: '成交量',
+      visitCount: '本月领养',
+      turnover: '救助站数',
+      dealCount: '活动数',
       projectNews: {
-        title: '项目动态',
-        moreNews: '更多动态',
-        desc1: 'Soybean 在2021年5月28日创建了开源项目 soybean-admin!',
-        desc2: 'Yanbowe 向 soybean-admin 提交了一个bug，多标签栏不会自适应。',
-        desc3: 'Soybean 准备为 soybean-admin 的发布做充分的准备工作!',
-        desc4: 'Soybean 正在忙于为soybean-admin写项目说明文档！',
-        desc5: 'Soybean 刚才把工作台页面随便写了一些，凑合能看了！'
+        title: '最近动态',
+        moreNews: '查看全部',
+        desc1: '系统新增了30只待领养宠物信息',
+        desc2: '张小明成功领养了拉布拉多「旺财」',
+        desc3: '阳光救助中心本月已救助15只流浪动物',
+        desc4: '2026年春季领养日活动报名火热进行中',
+        desc5: '绿城动物保护站完成了本月TNR计划'
       },
-      creativity: '创意'
+      creativity: '🐾 让爱回家'
     }
   },
   form: {

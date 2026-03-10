@@ -13,7 +13,6 @@ import ResetPwd from './modules/reset-pwd.vue';
 import BindWechat from './modules/bind-wechat.vue';
 
 interface Props {
-  /** The login module */
   module?: UnionKey.LoginModule;
 }
 
@@ -43,9 +42,7 @@ const bgThemeColor = computed(() =>
 
 const bgColor = computed(() => {
   const COLOR_WHITE = '#ffffff';
-
   const ratio = themeStore.darkMode ? 0.5 : 0.2;
-
   return mixColor(COLOR_WHITE, themeStore.themeColor, ratio);
 });
 </script>
@@ -55,26 +52,12 @@ const bgColor = computed(() => {
     <WaveBg :theme-color="bgThemeColor" />
     <NCard :bordered="false" class="relative z-4 w-auto rd-12px">
       <div class="w-400px lt-sm:w-300px">
-        <header class="flex-y-center justify-between">
-          <SystemLogo class="size-64px lt-sm:size-48px" />
-          <h3 class="text-28px text-primary font-500 lt-sm:text-22px">{{ $t('system.title') }}</h3>
-          <div class="i-flex-col">
-            <ThemeSchemaSwitch
-              :theme-schema="themeStore.themeScheme"
-              :show-tooltip="false"
-              class="text-20px lt-sm:text-18px"
-              @switch="themeStore.toggleThemeScheme"
-            />
-            <LangSwitch
-              v-if="themeStore.header.multilingual.visible"
-              :lang="appStore.locale"
-              :lang-options="appStore.localeOptions"
-              :show-tooltip="false"
-              @change-lang="appStore.changeLocale"
-            />
-          </div>
+        <header class="flex-col-center gap-12px pb-12px">
+          <div class="text-56px lt-sm:text-40px">🐾</div>
+          <h2 class="text-24px text-primary font-700 lt-sm:text-20px text-center">流浪宠物救助管理系统</h2>
+          <p class="text-14px text-#888 text-center">给每一个流浪的小生命一个温暖的家</p>
         </header>
-        <main class="pt-24px">
+        <main class="pt-16px">
           <h3 class="text-18px text-primary font-medium">{{ $t(activeModule.label) }}</h3>
           <div class="pt-24px">
             <Transition :name="themeStore.page.animateMode" mode="out-in" appear>

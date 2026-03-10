@@ -5,9 +5,9 @@ spring:
   application:
     name: pet-rescue
   datasource:
-    url: jdbc:mysql://localhost:3306/pet_rescue?useUnicode=true&characterEncoding=utf8mb4&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/pet_rescue?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
     username: root
-    password: 123456
+    password: ab123168
     driver-class-name: com.mysql.cj.jdbc.Driver
   data:
     redis:

@@ -15,20 +15,20 @@ SET CHARACTER_SET_CONNECTION = utf8mb4;
 -- 密码均为BCrypt加密后的 123456 => $2a$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36Kz2rG8r.VGqddm8kY5W6W
 -- -----------------------------------------------------------
 INSERT INTO `sys_user` (`id`, `username`, `password`, `nickname`, `phone`, `email`, `avatar`, `gender`, `role`, `status`, `created_at`) VALUES
-(1, 'admin', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '系统管理员', '13800000001', 'admin@petrescue.com', NULL, 1, 'ADMIN', 1, '2025-01-01 08:00:00'),
-(2, 'staff01', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '王志远', '13800000002', 'wangzy@petrescue.com', NULL, 1, 'STAFF', 1, '2025-01-05 09:00:00'),
-(3, 'staff02', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '李秀芳', '13800000003', 'lixf@petrescue.com', NULL, 2, 'STAFF', 1, '2025-01-06 09:30:00'),
-(4, 'staff03', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '赵建国', '13800000004', 'zhaojg@petrescue.com', NULL, 1, 'STAFF', 1, '2025-01-10 10:00:00'),
-(5, 'user01', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '张小明', '13900000001', 'zhangxm@qq.com', NULL, 1, 'USER', 1, '2025-02-01 14:00:00'),
-(6, 'user02', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '刘文静', '13900000002', 'liuwj@qq.com', NULL, 2, 'USER', 1, '2025-02-05 15:00:00'),
-(7, 'user03', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '陈浩然', '13900000003', 'chenhr@163.com', NULL, 1, 'USER', 1, '2025-02-10 16:30:00'),
-(8, 'user04', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '王丽华', '13900000004', 'wanglh@gmail.com', NULL, 2, 'USER', 1, '2025-02-15 09:00:00'),
-(9, 'user05', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '孙伟', '13900000005', 'sunwei@qq.com', NULL, 1, 'USER', 1, '2025-03-01 10:30:00'),
-(10, 'user06', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '周雨桐', '13900000006', 'zhouyt@qq.com', NULL, 2, 'USER', 1, '2025-03-05 11:00:00'),
-(11, 'user07', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '赵子涵', '13900000007', 'zhaozh@163.com', NULL, 1, 'USER', 1, '2025-03-10 14:00:00'),
-(12, 'user08', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '何佳琪', '13900000008', 'hejq@qq.com', NULL, 2, 'USER', 1, '2025-03-15 15:30:00'),
-(13, 'user09', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '吴天宇', '13900000009', 'wuty@gmail.com', NULL, 1, 'USER', 1, '2025-04-01 08:30:00'),
-(14, 'user10', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EH', '林小雅', '13900000010', 'linxy@qq.com', NULL, 2, 'USER', 1, '2025-04-05 09:00:00');
+(1, 'admin', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '系统管理员', '13800000001', 'admin@petrescue.com', NULL, 1, 'ADMIN', 1, '2025-01-01 08:00:00'),
+(2, 'staff01', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '王志远', '13800000002', 'wangzy@petrescue.com', NULL, 1, 'STAFF', 1, '2025-01-05 09:00:00'),
+(3, 'staff02', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '李秀芳', '13800000003', 'lixf@petrescue.com', NULL, 2, 'STAFF', 1, '2025-01-06 09:30:00'),
+(4, 'staff03', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '赵建国', '13800000004', 'zhaojg@petrescue.com', NULL, 1, 'STAFF', 1, '2025-01-10 10:00:00'),
+(5, 'user01', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '张小明', '13900000001', 'zhangxm@qq.com', NULL, 1, 'USER', 1, '2025-02-01 14:00:00'),
+(6, 'user02', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '刘文静', '13900000002', 'liuwj@qq.com', NULL, 2, 'USER', 1, '2025-02-05 15:00:00'),
+(7, 'user03', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '陈浩然', '13900000003', 'chenhr@163.com', NULL, 1, 'USER', 1, '2025-02-10 16:30:00'),
+(8, 'user04', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '王丽华', '13900000004', 'wanglh@gmail.com', NULL, 2, 'USER', 1, '2025-02-15 09:00:00'),
+(9, 'user05', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '孙伟', '13900000005', 'sunwei@qq.com', NULL, 1, 'USER', 1, '2025-03-01 10:30:00'),
+(10, 'user06', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '周雨桐', '13900000006', 'zhouyt@qq.com', NULL, 2, 'USER', 1, '2025-03-05 11:00:00'),
+(11, 'user07', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '赵子涵', '13900000007', 'zhaozh@163.com', NULL, 1, 'USER', 1, '2025-03-10 14:00:00'),
+(12, 'user08', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '何佳琪', '13900000008', 'hejq@qq.com', NULL, 2, 'USER', 1, '2025-03-15 15:30:00'),
+(13, 'user09', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '吴天宇', '13900000009', 'wuty@gmail.com', NULL, 1, 'USER', 1, '2025-04-01 08:30:00'),
+(14, 'user10', '$2a$10$l/1oMDGQfDh2C4SdLeG9Oe9v3anBEMn73T0721ARQh9wvLav4sd/u', '林小雅', '13900000010', 'linxy@qq.com', NULL, 2, 'USER', 1, '2025-04-05 09:00:00');
 
 -- -----------------------------------------------------------
 -- 2. 救助站数据
