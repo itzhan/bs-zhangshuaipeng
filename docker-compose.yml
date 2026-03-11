@@ -9,6 +9,7 @@ services:
   # ---- MySQL 数据库 ----
   mysql:
     image: mysql:8.0
+    platform: linux/amd64
     container_name: pet-rescue-mysql
     restart: unless-stopped
     environment:
@@ -33,6 +34,7 @@ services:
   # ---- Redis 缓存 ----
   redis:
     image: redis:7-alpine
+    platform: linux/amd64
     container_name: pet-rescue-redis
     restart: unless-stopped
     ports:
