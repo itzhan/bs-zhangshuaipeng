@@ -11,7 +11,7 @@ echo ╚════════════════════════
 echo.
 
 REM ---- 检查 Docker ----
-echo [0/3] 检查 Docker 环境...
+echo [0/2] 检查 Docker 环境...
 docker info >nul 2>&1
 if %errorlevel% neq 0 (
     echo ❌ Docker 未启动或未安装，请先安装并启动 Docker Desktop
@@ -22,25 +22,19 @@ if %errorlevel% neq 0 (
 echo ✅ Docker 已就绪
 echo.
 
-REM ---- 构建镜像 ----
-echo [1/3] 构建 Docker 镜像 (首次约5-10分钟)...
-docker compose build
+REM ---- 启动容器 ----
+echo [1/2] 启动所有服务容器...
+docker compose up -d
 if %errorlevel% neq 0 (
-    echo ❌ 镜像构建失败
+    echo ❌ 容器启动失败
     pause
     exit /b 1
 )
-echo ✅ 镜像构建完成
-echo.
-
-REM ---- 启动容器 ----
-echo [2/3] 启动所有服务容器...
-docker compose up -d
 echo ✅ 容器已启动
 echo.
 
 REM ---- 等待后端 ----
-echo [3/3] 等待后端服务就绪 (约30秒)...
+echo [2/2] 等待后端服务就绪 (约30秒)...
 set /a count=0
 :waitloop
 set /a count+=1
@@ -71,7 +65,6 @@ echo ╠════════════════════════
 echo ║                                                      ║
 echo ║  查看日志: docker compose logs -f                    ║
 echo ║  停止服务: docker compose down                       ║
-echo ║  重新部署: docker compose up -d --build              ║
 echo ║                                                      ║
 echo ╚══════════════════════════════════════════════════════╝
 echo.
